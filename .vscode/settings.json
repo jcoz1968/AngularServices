@@ -1,0 +1,51 @@
+{
+  "git.ignoreLimitWarning": true,
+  "git.decorations.enabled": false,
+
+  "problems.decorations.enabled": false,
+
+  "files.autoSave": "afterDelay",
+
+  "vsicons.presets.angular": true,
+
+  "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/.gitignore": true,
+      "npm-debug.log": true
+  },
+
+  "editor.fontFamily": "DejaVu Sans Mono",
+  "editor.fontSize": 16,
+  "editor.quickSuggestions": true,
+  "editor.parameterHints.enabled": false,
+  "editor.wordBasedSuggestions": false,
+  "editor.selectionHighlight": false,
+  "editor.suggestOnTriggerCharacters": true,
+
+  "window.zoomLevel": 1,
+  
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+
+  "editor.cursorBlinking": "solid",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#fa1b49",
+    "activityBar.activeBorder": "#155e02",
+    "activityBar.background": "#fa1b49",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#155e02",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#dd0531",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#fa1b49",
+    "titleBar.activeBackground": "#dd0531",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#dd053199",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#dd0531"
+}
