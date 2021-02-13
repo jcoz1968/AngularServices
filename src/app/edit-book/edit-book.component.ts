@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'app/core/data.service';
+import { LoggerService } from 'app/core/logger.service';
 
 import { Book } from 'app/models/book';
 @Component({
@@ -12,7 +13,9 @@ export class EditBookComponent implements OnInit {
 
   selectedBook: Book;
 
-  constructor(private route: ActivatedRoute, private dataService: DataService) { }
+  constructor(private route: ActivatedRoute,
+    private dataService: DataService,
+    private loggerService: LoggerService) { }
 
   ngOnInit() {
     // tslint:disable-next-line:radix
@@ -21,7 +24,8 @@ export class EditBookComponent implements OnInit {
   }
 
   setMostPopular(): void {
-    console.warn('Setting most popular book not yet implemented.');
+    this.dataService.setMostPopularBook(this.selectedBook);
+    this.loggerService.log(`New most popular book: ${this.selectedBook.title}`);
   }
 
   saveChanges(): void {
