@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BadgeService } from 'app/core/badge.service';
 
 import { Reader } from "app/models/reader";
 
